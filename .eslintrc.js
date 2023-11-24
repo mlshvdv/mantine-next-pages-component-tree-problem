@@ -1,6 +1,15 @@
 module.exports = {
-  extends: ['mantine', 'plugin:@next/next/recommended', 'plugin:jest/recommended'],
-  plugins: ['testing-library', 'jest'],
+  extends: [
+    'mantine',
+    'plugin:@next/next/recommended',
+    'plugin:jest/recommended',
+    'plugin:eslint-plugin-next-on-pages/recommended'
+  ],
+  plugins: [
+    'testing-library',
+    'jest',
+    'eslint-plugin-next-on-pages'
+  ],
   overrides: [
     {
       files: ['**/?(*.)+(spec|test).[jt]s?(x)'],
@@ -14,4 +23,4 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'import/extensions': 'off',
   },
-};
+}
